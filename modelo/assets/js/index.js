@@ -10,25 +10,25 @@ function meuEscopo(){
         resultado.innerHTML = '';
         if(altura && peso){
             if(imc < 18.5){
-                resultado.innerHTML = `<p>seu imc está  atualmente em <strong>${imc.toFixed(2)}</strong> Abaixo do peso!</p>`;
+                resultado.innerHTML = `IMC <strong>${imc.toFixed(2)}</strong> Abaixo do peso!`;
             }else if(imc < 25){
-                resultado.innerHTML = `<p>seu imc está  atualmente em <strong>${imc.toFixed(2)}</strong> Peso normal!</p>`;
+                resultado.innerHTML = `IMC <strong>${imc.toFixed(2)}</strong> Peso normal!`;
             }else if(imc < 30){
-                resultado.innerHTML = `<p>seu imc está  atualmente em <strong>${imc.toFixed(2)}</strong> Sobrepeso!</p>`;
+                resultado.innerHTML = `IMC <strong>${imc.toFixed(2)}</strong> Sobrepeso!`;
             }else if(imc < 35){
-                resultado.innerHTML = `<p>seu imc está  atualmente em <strong>${imc.toFixed(2)}</strong> Obesidade grau 1!</p>`;
+                resultado.innerHTML = `IMC <strong>${imc.toFixed(2)}</strong> Obesidade grau 1!`;
             }else if(imc < 40){
-                resultado.innerHTML = `<p>seu imc está  atualmente em <strong>${imc.toFixed(2)}</strong> Obesidade grau 2!</p>`;
+                resultado.innerHTML = `IMC <strong>${imc.toFixed(2)}</strong> Obesidade grau 2!`;
             }else{
-                resultado.innerHTML = `<p>seu imc está  atualmente em <strong>${imc.toFixed(2)}</strong> Obesidade grau 3!</p>`;
+                resultado.innerHTML = `IMC <strong>${imc.toFixed(2)}</strong> Obesidade grau 3!`;
             }
         }else {
             if(!peso && altura){
-                resultado.innerHTML = `<p>Não foi imformado o peso!`;
+                resultado.innerHTML = `Não foi imformado o peso!`;
             }else if (!altura && peso){
-                resultado.innerHTML = `<p>Não foi informado a altura!`;
+                resultado.innerHTML = `Não foi informado a altura!`;
             }else{
-                resultado.innerHTML = `<p>Não foi informado altura e peso!`;
+                resultado.innerHTML = `Não foi informado altura e peso!`;
             }
         }
         console.log(imc);

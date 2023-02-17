@@ -10,45 +10,36 @@
 <body>
     <section class="container">
         <h1>Tabela IMC</h1>
-        <div class="table">
-            <table>
-                <tr>
-                    <th>IMC</th>
-                    <th>Resultado</th>
-                </tr>
-                <tr>
-                    <td>Menos do que 18,5</td>
-                    <td>Abaixo do peso</td>
-                </tr>
-                <tr>
-                    <td>Entre 18,5 e 24,9</td>
-                    <td>Peso normal</td>
-                </tr>
-                <tr>
-                    <td>Entre 25 e 29,9</td>
-                    <td>Sobrepeso</td>
-                </tr>
-                <tr>
-                    <td>Entre 30 e 34,9</td>
-                    <td>Obesidade grau 1</td>
-                </tr>
-                <tr>
-                    <td>Entre 35 e 39,9</td>
-                    <td>Obesidade grau 2</td>
-                </tr>
-                <tr>
-                    <td>Mais do que 40</td>
-                    <td>Obesidade grau 3</td>
-                </tr>
-            </table>
-        </div>
+        <article class="flex">
+            <div>
+                <h1>IMC</h1>
+                <p>Menos do que 18,5</p>
+                <p>Entre 18,5 e 24,9</p>
+                <p>Entre 25 e 29,9</p>
+                <p>Entre 30 e 34,9</p>
+                <p>Entre 35 e 39,9</p>
+                <p>Mais do que 40</p>
+            </div>
+
+            <div>
+                <h1>Resultado</h1>
+                <p>Abaixo do peso</p>
+                <p>Peso normal</p>
+                <p>Sobrepeso</p>
+                <p>Obesidade grau 1</p>
+                <p>Obesidade grau 2</p>
+                <p>Obesidade grau 3</p>
+            </div>
+        </article>
+            
        <h1>Calcule seu IMC</h1>
        <form action="" class="form" method="post">
         <p>Peso: <input type="number" class="peso"></p>
         <p>Altura:<input type="number" class="altura" step="0.01"></p>
         <button>Enviar</button>
        </form>
-       <div class="resultado">
+       <div>
+        <p class="resultado"></p>
        </div>
     </section>
     <script src="assets/js/index.js"></script>
