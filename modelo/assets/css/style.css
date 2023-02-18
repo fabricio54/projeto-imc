@@ -74,6 +74,15 @@ form button:hover {
     padding: 15px;
 }
 
+.paragrafo-resultado , .bad {
+    background-color: rgb(109, 255, 182);
+    padding: 10px 20px;
+}
+
+.bad {
+    background-color: rgb(255, 150, 150);
+}
+
 @media screen and (min-width: 400px) and (max-width: 768px){
     body {
         font-size: 1em;
